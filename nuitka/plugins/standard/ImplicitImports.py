@@ -933,11 +933,13 @@ class NuitkaPluginPopularImplicitImports(NuitkaPluginBase):
         elif full_name == "fitz.fitz":
             yield "fitz._fitz"
         elif full_name == "pandas._libs":
+            yield "pandas._libs.tslibs"
             yield "pandas._libs.tslibs.np_datetime"
             yield "pandas._libs.tslibs.nattype"
             yield "pandas._libs.tslibs.base"
             yield "pandas._libs.tslibs.timestamps"
             yield "pandas._libs.tslibs.c_timestamp"
+            yield "pandas._libs.tslibs.timedeltas"
         elif full_name == "pandas.core.window":
             yield "pandas._libs.window"
             yield "pandas._libs.skiplist"
