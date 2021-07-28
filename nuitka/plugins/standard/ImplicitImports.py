@@ -937,6 +937,7 @@ class NuitkaPluginPopularImplicitImports(NuitkaPluginBase):
             yield "pandas._libs.tslibs.nattype"
             yield "pandas._libs.tslibs.base"
             yield "pandas._libs.tslibs.timestamps"
+            yield "pandas._libs.tslibs.c_timestamp"
         elif full_name == "pandas.core.window":
             yield "pandas._libs.window"
             yield "pandas._libs.skiplist"
